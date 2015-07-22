@@ -27,11 +27,26 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--overlay-drawer-button">
-        <div class="mdl-layout__drawer main-drawer mdl-color--brown-900 mdl-color-text--brown-50">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-js--expandable mdl-textfield--floating-label">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field">
+                        <label class="mdl-textfield__label mdl-color-text--brown-300" for="search-field">全文檢索</label>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer main-drawer">
             <span class="mdl-layout-title">數位典藏檢索系統</span>
-            <nav class="mdl-navigation main-navigation mdl-color--brown-800">
-                <a class="mdl-navigation__link" href="#"><i class="material-icons">search</i>搜尋</a>
+            <nav class="mdl-navigation main-navigation">
+                <a class="mdl-navigation__link" href="#"><i class="material-icons">dashboard</i>首頁</a>
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">book</i>文章</a>
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">photo</i>文宣品</a>
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">account_balance</i>公文書</a>
