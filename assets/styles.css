@@ -20,7 +20,7 @@
     -ms-flex-align: center;
     align-items: center;
 
-    color: #8D6E63;
+    color: rgba(255, 255, 255, .56);
     font-weight: 500;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .main-navigation .material-icons {
-    color: #8D6E63;
+    color: rgba(255, 255, 255, .56);
     margin-right: 32px;
 }
 
