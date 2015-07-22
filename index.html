@@ -29,22 +29,24 @@
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header mdl-layout--overlay-drawer-button">
         <header class="mdl-layout__header mdl-color--white mdl-color-text--grey-600">
-            <div class="mdl-layout__header-row">
-                <div class="mdl-layout-spacer"></div>
+            <div class="mdl-layout__header-row search-header">
                 <div class="mdl-textfield mdl-js-textfield mdl-js--expandable mdl-textfield--floating-label">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field-input">
                         <i class="material-icons">search</i>
                     </label>
                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="search-field">
-                        <label class="mdl-textfield__label mdl-color-text--brown-300" for="search-field">全文檢索</label>
+                        <input class="mdl-textfield__input" type="text" id="search-field-input">
+                        <label class="mdl-textfield__label mdl-color-text--brown-300" for="search-field-input">全文檢索</label>
                     </div>
                 </div>
 
             </div>
         </header>
         <div class="mdl-layout__drawer main-drawer mdl-color--brown-900 mdl-color-text--brown-50">
-            <span class="mdl-layout-title">數位典藏檢索系統</span>
+            <header class="main-header">
+                <img alt="民間司法改革基金會" src="http://hsu2015.jrf.org.tw/images/logo.png">
+                <h6>數位典藏檢索系統</h6>
+            </header>
             <nav class="mdl-navigation main-navigation mdl-color--brown-800">
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">dashboard</i>首頁</a>
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">book</i>文章</a>

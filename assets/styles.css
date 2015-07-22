@@ -27,8 +27,27 @@
     margin-right: 32px;
 }
 
+.main-header {
+    min-height: 64px;
+    padding: 16px;
+    color: #d4b462;
+}
+
+.main-header h6 {
+    margin: 16px 0 0 0;
+    font-weight: 600;
+}
+
+.main-header img {
+    max-width: 100%;
+}
+
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
     color: #8D6E63;
+}
+
+.search-header .mdl-textfield, .search-header .mdl-textfield__expandable-holder {
+    width: 100%;
 }
 
 .mdl-data-table.search-result-table td, .mdl-data-table.search-result-table th {
