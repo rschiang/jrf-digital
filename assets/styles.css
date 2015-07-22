@@ -26,3 +26,7 @@
 .main-navigation .material-icons {
     margin-right: 32px;
 }
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #8D6E63;
+}
