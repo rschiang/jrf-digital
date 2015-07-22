@@ -30,3 +30,14 @@
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
     color: #8D6E63;
 }
+
+.mdl-data-table.search-result-table td, .mdl-data-table.search-result-table th {
+    text-align: left;
+}
+
+.mdl-data-table.search-result-table a {
+    display: inline-block;
+    width: 45em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
