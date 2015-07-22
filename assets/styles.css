@@ -51,13 +51,20 @@
     background: white;
 }
 
+.search-result-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
 .mdl-data-table.search-result-table td, .mdl-data-table.search-result-table th {
     text-align: left;
 }
 
-.mdl-data-table.search-result-table a {
-    display: inline-block;
-    width: 45em;
+.mdl-data-table.search-result-table .fill-column {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.mdl-data-table.search-result-table a {
+    display: inline;
+    word-wrap: break-word;
 }
