@@ -51,10 +51,6 @@
     background: white;
 }
 
-.search-header .mdl-textfield, .search-header .mdl-textfield__expandable-holder {
-    width: 100%;
-}
-
 .mdl-data-table.search-result-table td, .mdl-data-table.search-result-table th {
     text-align: left;
 }
