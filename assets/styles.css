@@ -1,3 +1,7 @@
+.main-drawer {
+    border: none;
+}
+
 .main-navigation {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -43,12 +47,15 @@
     margin: 16px 0 0 0;
     font-weight: 600;
 }
-
 .main-header .avatar {
     width: 56px;
     height: 56px;
     border-radius: 50%;
     background: white;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: rgba(0, 0, 0, .54);
 }
 
 .search-result-table {
