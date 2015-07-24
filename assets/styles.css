@@ -79,6 +79,7 @@
 .magazine-card {
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .magazine-card::before {
@@ -89,4 +90,18 @@
 .magazine-card .mdl-card__actions {
     background: rgba(0, 0, 0, .36);
     color: #fff;
+}
+
+.magazine-card .mdl-card__actions a, .magazine-card .mdl-card__actions a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.magazine-card .card-mouse-area {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
