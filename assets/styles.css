@@ -58,6 +58,10 @@
     color: rgba(0, 0, 0, .54);
 }
 
+.page-content {
+    max-width: 1080px;
+}
+
 .search-result-table {
     table-layout: fixed;
     width: 100%;
@@ -104,4 +108,12 @@
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+.search-form {
+    padding: 16px;
+}
+
+.search-form .search-field {
+    width: 100%;
 }
