@@ -81,8 +81,9 @@
     background-repeat: no-repeat;
 }
 
-.magazine-card .mdl-card--expand {
-    margin-top: 100%;
+.magazine-card::before {
+    content: "";
+    padding-top: 100%;
 }
 
 .magazine-card .mdl-card__actions {
