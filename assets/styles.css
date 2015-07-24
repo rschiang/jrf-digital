@@ -75,3 +75,17 @@
     display: inline;
     word-wrap: break-word;
 }
+
+.magazine-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.magazine-card .mdl-card--expand {
+    margin-top: 100%;
+}
+
+.magazine-card .mdl-card__actions {
+    background: rgba(0, 0, 0, .36);
+    color: #fff;
+}
