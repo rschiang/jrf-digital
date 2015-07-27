@@ -29,7 +29,15 @@
     <link rel="shortcut icon" href="http://www.jrf.org.tw/newjrf/img/jrf.ico">
 </head>
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-color--white mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row full-search-header">
+                <div class="search-row-wrapper">
+                    <label for="search-field"><i class="material-icons">search</i></label>
+                    <input type="text" id="search-field" name="q" placeholder="搜尋">
+                </div>
+            </div>
+        </header>
         <div class="mdl-layout__drawer main-drawer mdl-color--brown-900 mdl-color-text--brown-50">
             <header class="main-header">
                 <img class="avatar" alt="民間司法改革基金會" src="http://www.jrf.org.tw/newjrf/img/info_logo.png">
@@ -51,12 +59,6 @@
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
             <div class="mdl-grid page-content">
-                <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--2dp search-form">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label search-field">
-                        <input class="mdl-textfield__input" type="text" id="search-field-input">
-                        <label class="mdl-textfield__label" for="search-field-input">搜尋資料庫</label>
-                    </div>
-                </div>
             </div>
         </main>
     </div>
