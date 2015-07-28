@@ -149,3 +149,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.featured-card .mdl-card__title {
+    background: #E91E63;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100%;
+}
