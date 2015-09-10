@@ -1,5 +1,6 @@
 // Issue and articles page
 @import "compass/css3/transform";
+@import "compass/typography/lists";
 @import "compass/typography/links/hover-link";
 
 .jrf-issue-ribbon {
@@ -75,5 +76,47 @@
 
     h5, h6 {
         a { @include hover-link; }
+    }
+}
+
+.jrf-issue-nav {
+    padding-left: 56px;
+    color: white;
+
+    h6 {
+        margin: 8px 0 16px;
+
+        a {
+            color: white;
+            @include hover-link;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @include no-bullets;
+
+        a {
+            color: #efebe9;
+            display: block;
+            padding: 6px 0 6px 14px;
+            font-size: .92857em;
+            font-weight: inherit;
+            text-decoration: none;
+
+            &:hover, &:focus { background: #6d4c41; }
+            &:active { background: #5d4037; }
+        }
+    }
+
+    li.active {
+        margin-left: -2px;
+
+        a {
+            border-left: 2px white solid;
+            color: white;
+            font-weight: bold;
+        }
     }
 }
