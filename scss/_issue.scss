@@ -45,23 +45,27 @@
 }
 
 .jrf-issue-articles {
-    padding: 40px;
     border-radius: 2px;
+    padding: 24px 40px;
 
-    h5:first-child {
+    > :first-child {
         margin-top: 0;
     }
-}
 
-.jrf-issue-article {
-    &:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        padding-bottom: 1em;
+    > h5:not(:first-child) {
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        padding: 16px 40px 0;
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
     h6 {
         font-size: inherit;
         font-weight: bold;
-        margin: 0.5em 0;
+        margin: 8px 0;
+    }
+
+    .jrf-issue-article + .jrf-issue-article {
+        padding-top: 16px;
     }
 }
