@@ -45,10 +45,13 @@
     }
 }
 
-.jrf-issue-articles {
+.jrf-issue-content > .content {
+    min-height: 70vh;
     border-radius: 2px;
     padding: 24px 40px;
+}
 
+.jrf-issue-articles {
     > :first-child {
         margin-top: 0;
     }
@@ -66,7 +69,7 @@
         margin: 8px 0;
     }
 
-    .jrf-issue-article + .jrf-issue-article {
+    .jrf-issue-entry + .jrf-issue-entry {
         padding-top: 16px;
     }
 
