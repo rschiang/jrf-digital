@@ -1,5 +1,6 @@
 // Issue and articles page
 @import "compass/css3/transform";
+@import "compass/typography/links/hover-link";
 
 .jrf-issue-ribbon {
     height: 70vh;
@@ -67,5 +68,9 @@
 
     .jrf-issue-article + .jrf-issue-article {
         padding-top: 16px;
+    }
+
+    h5, h6 {
+        a { @include hover-link; }
     }
 }

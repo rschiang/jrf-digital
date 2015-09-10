@@ -1,11 +1,5 @@
 @import "flexbox";
 
-a {
-   text-decoration: none;
-
-   &:hover { text-decoration: underline; }
-}
-
 .main-drawer {
     border: none;
 }
