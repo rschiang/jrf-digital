@@ -54,7 +54,7 @@
 
 .jrf-issue-articles {
     > :first-child {
-        margin-top: 0;
+        margin-top: 8px;
     }
 
     > h5:not(:first-child) {
@@ -76,6 +76,12 @@
 
     h5, h6 {
         a { @include hover-link; }
+    }
+}
+
+.jrf-issue-article {
+    p {
+        text-indent: 1em;
     }
 }
 
@@ -105,8 +111,8 @@
             font-weight: inherit;
             text-decoration: none;
 
-            &:hover, &:focus { background: #6d4c41; }
-            &:active { background: #5d4037; }
+            &:hover, &:focus { background: #5d4037; }
+            &:active { background: #4e342e; }
         }
     }
 
