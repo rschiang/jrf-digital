@@ -1,5 +1,9 @@
 @import "flexbox";
 
+* {
+    box-sizing: border-box;
+}
+
 .main-drawer {
     border: none;
 }
@@ -150,6 +154,11 @@
 
 .material-icons.large {
     font-size: 56px;
+}
+
+.jrf-record-layout .page-content {
+    padding: 24px 0;
+    min-height: calc(100vh - 156px);
 }
 
 // Single page layout overrides

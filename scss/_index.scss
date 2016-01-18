@@ -10,15 +10,6 @@
 
 .jrf-index-layout {
     background: rgba(#4e342e, .85);
-
-    main {
-        @include display-flex;
-        @include flex-direction(column);
-    }
-
-    .mdl-mini-footer {
-        @include flex-grow(1);
-    }
 }
 
 .jrf-index-hero {
@@ -67,11 +58,5 @@
 }
 
 .jrf-index-common {
-    @include flex-grow(2);
     padding: 8px 0;
-
-    .page-content {
-        @include display-flex;
-        @include flex-grow(1);
-    }
 }
