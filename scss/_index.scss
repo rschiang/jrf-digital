@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     background-color: #4e342e;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -15,17 +15,22 @@
 .jrf-index-hero {
     height: 800px;
     color: white;
+    text-align: center;
 
     .slogan {
-        font-size: 3.5em;
+        margin: 24px 0 8px;
+        font-weight: 100;
     }
 
     .sub-slogan {
-        font-size: 1.25em;
+        margin: 8px 0 24px;
+        font-weight: 200;
     }
 
     .search-row-wrapper {
+        margin: auto;
         padding: .5em 56px .5em 1em;
+        max-width: 667px;
 
         button {
             position: absolute;
