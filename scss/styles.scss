@@ -117,7 +117,7 @@
     padding: .5em 1em .5em 56px;
     position: relative;
 
-    .material-icons {
+    .mdl-layout__header & .material-icons {
         position: absolute;
         left: 16px;
         top: 9px;
@@ -148,4 +148,5 @@
 }
 
 // Single page layout overrides
+@import "index";
 @import "issue";

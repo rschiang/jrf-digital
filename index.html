@@ -28,14 +28,15 @@
 
     <link rel="shortcut icon" href="http://www.jrf.org.tw/newjrf/img/jrf.ico">
 </head>
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-color--white mdl-color-text--grey-600">
-            <div class="mdl-layout__header-row full-search-header">
-                <form class="search-row-wrapper">
-                    <label for="search-field"><i class="material-icons">search</i></label>
-                    <input type="text" id="search-field" name="q" placeholder="搜尋">
-                </form>
+<body class="jrf-index-body" style="background-image: url('assets/background/102.jpg');">
+    <div class="mdl-layout mdl-js-layout jrf-index-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#">關於數典</a>
+                    <a class="mdl-navigation__link" href="http://www.jrf.org.tw">司改會首頁</a>
+                </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer main-drawer mdl-color--brown-900 mdl-color-text--brown-50">
@@ -57,28 +58,18 @@
                 <a class="mdl-navigation__link" href="#"><i class="material-icons">help_outline</i></a>
             </nav>
         </div>
-        <main class="mdl-layout__content mdl-color--grey-100">
-            <div class="mdl-grid page-content">
-                <div class="mdl-cell mdl-cell--8-col mdl-color--white mdl-shadow--2dp">
-                    <img alt="Placeholder" src="http://lorempixel.com/640/480/food/1" width="100%">
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-color--white mdl-shadow--2dp mdl-card featured-card">
-                    <div class="mdl-card__title" style="background-image: url(http://lorempixel.com/640/480/food/2)">
-                        <h2 class="mdl-card__title-text">特色內容</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        「冬瓜蒸火腿」作法極簡，將火腿（臺灣多以家鄉肉替代）切成薄片，冬瓜取中段一截，削皮後切成梯形塊，一塊冬瓜一片火腿放好，蒸熟即可食。需知此菜的奧妙在於蒸熟的過程冬瓜會吸乾火腿之蜜汁，所以上桌後火腿已淡乎寡味，而冬瓜則具有瓜蔬的清苦之風與火腿的華貴之氣，心軟邊硬，汁甜而不膩，令人傾倒。
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-color--white mdl-shadow--2dp">
-                    <img alt="Placeholder" src="http://lorempixel.com/640/480/food/3" width="100%">
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-color--white mdl-shadow--2dp">
-                    <img alt="Placeholder" src="http://lorempixel.com/640/480/food/4" width="100%">
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-color--white mdl-shadow--2dp">
-                    <img alt="Placeholder" src="http://lorempixel.com/640/480/food/5" width="100%">
-                </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <section class="jrf-index-hero">
+                    <h1 class="slogan">司法改革二十年</h1>
+                    <h4 class="sub-slogan">戴著閃亮鋼盔的司改典藏資料庫</h4>
+                    <form class="search-row-wrapper" action="http://digital.jrf.org.tw/records" accept-charset="UTF-8" method="GET">
+                        <input id="search-field" type="search" name="q[title_or_content_cont]" placeholder="搜尋關鍵字，例如「司法」">
+                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" type="submit">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </form>
+                </section>
             </div>
         </main>
     </div>
