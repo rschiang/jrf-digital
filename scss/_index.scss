@@ -13,7 +13,7 @@
 }
 
 .jrf-index-hero {
-    height: 800px;
+    padding-bottom: 48px;
     color: white;
     text-align: center;
 
@@ -38,4 +38,25 @@
             right: 12px;
         }
     }
+}
+
+.jrf-index-featured {
+    padding: 4px 0;
+    text-align: center;
+
+    .icon-link {
+        color: #37474F;
+        text-decoration: none;
+
+        &:hover { color: #E91E63; }
+    }
+
+    .large.material-icons {
+        display: block;
+        margin: 8px auto;
+    }
+}
+
+.jrf-index-common {
+    padding: 8px 0;
 }

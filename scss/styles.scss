@@ -148,6 +148,10 @@
     padding-top: 100%;
 }
 
+.material-icons.large {
+    font-size: 56px;
+}
+
 // Single page layout overrides
 @import "index";
 @import "issue";
