@@ -120,6 +120,7 @@
     .material-icons {
         position: absolute;
         left: 16px;
+        top: 9px;
     }
 
     input {
@@ -128,11 +129,15 @@
         border: none;
         font-size: 1em;
         outline: none;
-        padding: 4px 0;
+        padding: .25em 0;
         width: 100%;
         -webkit-appearance: none;
         -moz-appearance: none;
     }
+}
+
+.mdl-textfield__input {
+    -webkit-appearance: none; /* Fixes Safari displaying border */
 }
 
 .featured-card .mdl-card__title {
