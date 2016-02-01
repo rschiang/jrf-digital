@@ -161,6 +161,42 @@
     min-height: calc(100vh - 156px);
 }
 
+.jrf-article-item {
+    text-align: left;
+
+    .mdl-card__supporting-text {
+        @include flex-grow(1);
+    }
+
+    .mdl-card__actions {
+        @include display-flex;
+        color: rgba(black, .54);
+        font-size: 14px;
+        height: 52px;
+        padding: 16px;
+    }
+
+    .category {
+        padding-left: 22px;
+        position: relative;
+
+        &.announcement:before { background: #FF8A65; }
+        &.email:before { background: #FFB74D; }
+    }
+
+    .category:before {
+        background: #A1887F;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 14px;
+        left: 0;
+        position: absolute;
+        top: 2px;
+        width: 14px;
+    }
+}
+
 // Single page layout overrides
 @import "index";
 @import "issue";
