@@ -156,13 +156,23 @@
     font-size: 56px;
 }
 
-.jrf-record-layout .page-content {
+.stretch.page-content {
     padding: 24px 0;
     min-height: calc(100vh - 156px);
+
+    &.single {
+        padding: 24px;
+        max-width: 948px;
+    }
 }
 
 .jrf-article-item {
     text-align: left;
+
+    .single & {
+        background: #fff;
+        h4 { margin: 12px 8px; }
+    }
 
     .mdl-card__supporting-text {
         @include flex-grow(1);
