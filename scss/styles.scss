@@ -39,6 +39,7 @@
         margin: 16px 0 0 0;
         font-weight: 600;
     }
+
     .avatar {
         width: 56px;
         height: 56px;
@@ -56,22 +57,21 @@
     margin: auto;
 }
 
-.mdl-data-table.search-result-table {
-    table-layout: fixed;
-    width: 100%;
-
-    td, th {
-        text-align: left;
-    }
-
-    .fill-column {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.pagination {
+    color: #BCAAA4;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
 
     a {
-        display: inline;
-        word-wrap: break-word;
+        display: inline-block;
+        font-weight: 500;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 16px;
+        text-decoration: none;
+
+        &:hover { background: #D7CCC8; }
     }
 }
 
