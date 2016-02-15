@@ -188,7 +188,7 @@
 
     .mdl-card__actions {
         @include display-flex;
-        color: rgba(black, .54);
+        color: darken(white, 54%);
         font-size: 14px;
         height: 52px;
         padding: 16px;
@@ -212,6 +212,14 @@
         position: absolute;
         top: 2px;
         width: 14px;
+    }
+
+    .category > a {
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: none;
+
+        &:hover { color: #424242; }
     }
 }
 
