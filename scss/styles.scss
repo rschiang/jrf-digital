@@ -8,27 +8,35 @@
     border: none;
 }
 
-.main-navigation {
+.mdl-navigation.main-navigation {
     @include flex-grow(1);
 
+    .mdl-navigation__link {
+        @include display-flex;
+        @include flex-direction(row);
+        @include align-items(center);
+
+        font-weight: 500;
+    }
+
     .material-icons {
-       color: rgba(255, 255, 255, .56);
        margin-right: 32px;
+       .is-small-screen & {
+           margin-right: 16px;
+       }
    }
-}
 
-.mdl-navigation.main-navigation .mdl-navigation__link {
-    @include display-flex;
-    @include flex-direction(row);
-    @include align-items(center);
+    &.mdl-color--brown-800 .mdl-navigation__link {
+        color: rgba(255, 255, 255, .56);
+         &:hover {
+             background-color: #BCAAA4;
+             color: #37474F;
+        }
+    }
 
-    color: rgba(255, 255, 255, .56);
-    font-weight: 500;
-
-     &:hover {
-         background-color: #BCAAA4;
-         color: #37474F;
-     }
+    &.mdl-color--brown-800 .material-icons {
+        color: rgba(255, 255, 255, .56);
+    }
 }
 
 .main-header {
