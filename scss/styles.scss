@@ -43,7 +43,7 @@
     min-height: 64px;
     padding: 16px;
 
-    h6 {
+    h4, h6 {
         margin: 16px 0 0 0;
         font-weight: 600;
     }
@@ -56,7 +56,7 @@
     }
 }
 
-.mdl-layout__header .mdl-layout__drawer-button {
+.mdl-color--white.mdl-layout__header .mdl-layout__drawer-button {
     color: rgba(0, 0, 0, .54);
 }
 

@@ -1,6 +1,23 @@
 .mdl-layout__drawer-button.jrf-back-button {
     line-height: 42px;
-    color: white;
+    color: rgba(white, .5);
+}
+
+.mdl-layout__header-row.jrf-icon-row {
+    .mdl-navigation:first-child {
+        margin-left: -24px;
+        .is-small-screen & { margin-left: -16px; }
+    }
+
+    .mdl-navigation__link {
+        @include display-flex;
+        @include flex-direction(row);
+        @include align-items(center);
+    }
+
+    .material-icons {
+        margin-right: 8px;
+    }
 }
 
 .jrf-login-layout {
