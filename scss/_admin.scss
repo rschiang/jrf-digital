@@ -13,10 +13,10 @@
         @include display-flex;
         @include flex-direction(row);
         @include align-items(center);
-    }
-
-    .material-icons {
-        margin-right: 8px;
+        
+        .material-icons {
+            margin-right: 8px;
+        }
     }
 }
 
