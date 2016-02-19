@@ -10,6 +10,10 @@
 
 .jrf-index-layout {
     background: rgba(#4e342e, .85);
+
+     & > .mdl-layout__drawer-button {
+         color: rgba(255, 255, 255, .5);
+     }
 }
 
 .jrf-index-hero {
