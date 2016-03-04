@@ -19,6 +19,10 @@
         }
     }
 
+    .mdl-button:not(:last-child) {
+        margin-right: 8px;
+    }
+
     .mdl-textfield {
         padding: 22px 0;
     }
