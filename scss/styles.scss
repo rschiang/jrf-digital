@@ -235,6 +235,16 @@
     }
 }
 
+.jrf-align-right {
+    float: right;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
 // Single page layout overrides
 @import "index";
 @import "issue";

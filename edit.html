@@ -79,8 +79,14 @@
                         </div>
                         <div class="mdl-cell mdl-cell--4-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="media-field" name="media" value="紙本" />
-                                <label class="mdl-textfield__label" for="media-field">資料類型</label>
+                                <input class="mdl-textfield__input" type="text" id="issue-field" name="issue" value="法官法" />
+                                <label class="mdl-textfield__label" for="issue-field">案名</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="keyword-field" name="keyword" value="檢察官、檢察官改革協會、司法官法、檢察一體、民間司法改革基金會" />
+                                <label class="mdl-textfield__label" for="keyword-field">關鍵字</label>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col">
@@ -89,32 +95,206 @@
                                 <label class="mdl-textfield__label" for="identifier-field">編號</label>
                             </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+                        <div class="mdl-cell mdl-cell--4-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="category-field" name="category" value="聲明稿" />
-                                <label class="mdl-textfield__label" for="category-field">分類</label>
+                                <input class="mdl-textfield__input" type="text" id="topic-field" name="topic" value="剪報" />
+                                <label class="mdl-textfield__label" for="topic-field">主題</label>
                             </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+                        <div class="mdl-cell mdl-cell--4-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" type="text" id="date-field" name="date" value="1998-06-15" />
                                 <label class="mdl-textfield__label" for="date-field">日期</label>
                             </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                        <div class="mdl-cell mdl-cell--3-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="publisher-field" name="publisher" value="民間司法改革基金會" />
+                                <input class="mdl-textfield__input" type="text" id="category-field" name="category" value="聲援個案及議題" />
+                                <label class="mdl-textfield__label" for="category-field">資料類型</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="carrier-field" name="carrier" value="紙本" />
+                                <label class="mdl-textfield__label" for="carrier-field">資料載體</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="pattern-field" name="pattern" value="文字" />
+                                <label class="mdl-textfield__label" for="pattern-field">資料形式</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="language-field" name="language" value="中文" />
+                                <label class="mdl-textfield__label" for="language-field">語言</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="contributor-field" name="contributor" value="林曉雲" />
+                                <label class="mdl-textfield__label" for="contributor-field">貢獻者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="publisher-field" name="publisher" value="" />
                                 <label class="mdl-textfield__label" for="publisher-field">出版者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="collector-field" name="collector" value="民間司法改革基金會" />
+                                <label class="mdl-textfield__label" for="collector-field">典藏單位</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="unit-field" name="unit" value="面" />
+                                <label class="mdl-textfield__label" for="unit-field">資料單位</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="size-field" name="size" value="A4" />
+                                <label class="mdl-textfield__label" for="size-field">資料大小</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="page-field" name="page" value="1" />
+                                <label class="mdl-textfield__label" for="page-field">資料面數</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="quantity-field" name="quantity" value="1" />
+                                <label class="mdl-textfield__label" for="quantity-field">檔案數量</label>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col">
                             <div class="mdl-textfield mdl-js-textfield">
-                                <textarea class="mdl-textfield__input" type="text" rows="10" id="content-field" name="content">聲援個案及議題1998-06-15檢察官定位的問題爭議不休，檢察官改革協會提出的司法官法草案，將檢察官明文定位為「公益代表人」，是代表國家追溯處罰犯罪而執行公務事務者，為排拒政治勢力不當介入，明文將「檢察一體」陽光透明化。除了檢改會所提出的「司法官法草案」外，民間司法改革基金會正在為檢察官量身訂作「檢察官法草案」，而主管檢察官事務的法務部已組成專案小組，研討一套適合檢察官的「司法官法草案」，顯示出我國的檢察體系正面臨著危機和轉機。</textarea>
+                                <textarea class="mdl-textfield__input" type="text" rows="10" id="content-field" name="content">檢察官定位的問題爭議不休，檢察官改革協會提出的司法官法草案，將檢察官明文定位為「公益代表人」，是代表國家追溯處罰犯罪而執行公務事務者，為排拒政治勢力不當介入，明文將「檢察一體」陽光透明化。除了檢改會所提出的「司法官法草案」外，民間司法改革基金會正在為檢察官量身訂作「檢察官法草案」，而主管檢察官事務的法務部已組成專案小組，研討一套適合檢察官的「司法官法草案」，顯示出我國的檢察體系正面臨著危機和轉機。</textarea>
                                 <label class="mdl-textfield__label" for="content-field">內容</label>
                             </div>
                         </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="catalog-field" name="catalog" value="" />
+                                <label class="mdl-textfield__label" for="catalog-field">目次 / 附件</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="information-field" name="information" value="" />
+                                <label class="mdl-textfield__label" for="information-field">對應資訊</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="comment-field" name="comment" value="" />
+                                <label class="mdl-textfield__label" for="comment-field">附註項</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="copyright-field" name="copyright" value="" />
+                                <label class="mdl-textfield__label" for="copyright-field">原件著作權</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="right_in_rem-field" name="right_in_rem" value="" />
+                                <label class="mdl-textfield__label" for="right_in_rem-field">原件財產物權</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="statistics-field" name="statistics" value="1" />
+                                <label class="mdl-textfield__label" for="statistics-field">統計</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="serial-no-field" name="serial-no" value="T0000197" />
+                                <label class="mdl-textfield__label" for="serial-no-field">序號</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="ownership-field" name="ownership" value="" />
+                                <label class="mdl-textfield__label" for="ownership-field">數位檔所有權</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="license-field" name="license" value="" />
+                                <label class="mdl-textfield__label" for="license-field">數位檔授權狀況</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="filename-field" name="filename" value="" />
+                                <label class="mdl-textfield__label" for="filename-field">數位檔名稱</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="filetype-field" name="filetype" value="" />
+                                <label class="mdl-textfield__label" for="filetype-field">數位檔格式</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="creator-field" name="creator" value="王駿原" />
+                                <label class="mdl-textfield__label" for="creator-field">登錄者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="created-at-field" name="created-at" value="2014/4/12" />
+                                <label class="mdl-textfield__label" for="created-at-field">建檔日期</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="commentor-field" name="commentor" value="吳亮衡" />
+                                <label class="mdl-textfield__label" for="commentor-field">描述者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="commented-at-field" name="commented-at" value="2015/2/5" />
+                                <label class="mdl-textfield__label" for="commented-at-field">描述日期</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="updater-field" name="updater" value="" />
+                                <label class="mdl-textfield__label" for="updater-field">修改者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="updated-at-field" name="updated-at" value="" />
+                                <label class="mdl-textfield__label" for="updated-at-field">修改日期</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="sensitive-field">
+                                <input class="mdl-checkbox__input" type="checkbox" id="sensitive-field" name="sensitive" />
+                                <span class="mdl-checkbox__label" for="pattern-field">敏感資料</span>
+                            </label>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="published-field">
+                                <input class="mdl-checkbox__input" type="checkbox" id="published-field" name="published" />
+                                <span class="mdl-checkbox__label" for="pattern-field">公開數位檔</span>
+                            </label>
+                        </div>
                         <div class="mdl-cell mdl-cell--12-col">
-                            <button type="submit" class="mdl-button mdl-js-button mdl-button--primary">儲存</button>
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--primary jrf-align-right">儲存</button>
                         </div>
                     </div>
                 </form>
