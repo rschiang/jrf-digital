@@ -245,6 +245,19 @@
     }
 }
 
+select.mdl-textfield__input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1),
+                background-color .2s cubic-bezier(.4, 0, .2, 1), 
+                color .2s cubic-bezier(.4, 0, .2, 1);
+
+    // Apply button style
+    &:hover { background-color: rgba(158, 158, 158, .2); }
+    &:focus:not(:active) { background-color: rgba(0, 0, 0, .12); }
+    &:active { background-color: rgba(158, 158, 158, .4); }
+}
+
 // Single page layout overrides
 @import "index";
 @import "issue";
