@@ -97,19 +97,31 @@
                         </div>
                         <div class="mdl-cell mdl-cell--4-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="topic-field" name="topic" value="剪報" />
+                                <select class="mdl-textfield__input" id="topic-field" name="topic" value="剪報">
+                                    <option selected>剪報</option>
+                                    <option>雜誌</option>
+                                    <option>文章</option>
+                                    <option>文宣品</option>
+                                    <option>公文書</option>
+                                    <option>聲明稿</option>
+                                    <option>陳情相關資料</option>
+                                    <option>會務</option>
+                                    <option>信函</option>
+                                </select>
                                 <label class="mdl-textfield__label" for="topic-field">主題</label>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="date-field" name="date" value="1998-06-15" />
+                                <input class="mdl-textfield__input" type="date" id="date-field" name="date" value="1998-06-15" />
                                 <label class="mdl-textfield__label" for="date-field">日期</label>
                             </div>
                         </div>
                         <div class="mdl-cell mdl-cell--3-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="category-field" name="category" value="聲援個案及議題" />
+                                <select class="mdl-textfield__input" id="category-field" name="category">
+                                    <option selected>聲援個案及議題</option>
+                                </select>
                                 <label class="mdl-textfield__label" for="category-field">資料類型</label>
                             </div>
                         </div>
@@ -253,7 +265,7 @@
                         </div>
                         <div class="mdl-cell mdl-cell--3-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="created-at-field" name="created-at" value="2014/4/12" />
+                                <input class="mdl-textfield__input" type="date" id="created-at-field" name="created-at" value="2014/4/12" />
                                 <label class="mdl-textfield__label" for="created-at-field">建檔日期</label>
                             </div>
                         </div>
@@ -265,7 +277,7 @@
                         </div>
                         <div class="mdl-cell mdl-cell--3-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="commented-at-field" name="commented-at" value="2015/2/5" />
+                                <input class="mdl-textfield__input" type="date" id="commented-at-field" name="commented-at" value="2015/2/5" />
                                 <label class="mdl-textfield__label" for="commented-at-field">描述日期</label>
                             </div>
                         </div>
@@ -277,7 +289,7 @@
                         </div>
                         <div class="mdl-cell mdl-cell--3-col">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="updated-at-field" name="updated-at" value="" />
+                                <input class="mdl-textfield__input" type="date" id="updated-at-field" name="updated-at" value="" />
                                 <label class="mdl-textfield__label" for="updated-at-field">修改日期</label>
                             </div>
                         </div>
