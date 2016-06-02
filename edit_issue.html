@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="收錄民間司法改革基金會歷年聲明文件、剪報、會務資訊、以及其他數位內容。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>數位典藏檢索系統 – 民間司法改革基金會</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/app-icon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="JRF 數位典藏">
+    <link rel="apple-touch-icon-precomposed" href="assets/app-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/app-icon.png">
+    <meta name="msapplication-TileColor" content="#795548">
+
+    <link rel="stylesheet" href="assets/material.brown-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light,medium">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <link rel="shortcut icon" href="http://www.jrf.org.tw/newjrf/img/jrf.ico">
+</head>
+<body class="jrf-admin-body">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header jrf-admin-layout">
+        <div class="mdl-layout__drawer main-drawer">
+            <header class="main-header">
+                <img class="avatar" alt="民間司法改革基金會" src="assets/app_icon.png">
+                <h6><small>民間司法改革基金會</small><br>數位典藏維護系統</h6>
+            </header>
+            <nav class="mdl-navigation main-navigation">
+                <div class="mdl-layout-spacer"></div>
+            </nav>
+        </div>
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">數位典藏維護系統</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">返回資料庫</a>
+                    <a class="mdl-navigation__link" href="login.html">登出</a>
+                </nav>
+            </div>
+            <div class="mdl-layout__header-row jrf-icon-row">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="admin.html"><i class="material-icons">storage</i>典藏紀錄</a>
+                    <a class="mdl-navigation__link" href="admin_magazine.html"><i class="material-icons">collections_bookmark</i>雜誌文章</a>
+                </nav>
+                <div class="mdl-layout-spacer"></div>
+                <a class="mdl-button mdl-js-button mdl-button--icon" id="add-button" href="#"><i class="material-icons">add</i></a>
+                <div class="mdl-tooltip" for="add-button">新增</div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field-input">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field-input">
+                        <label class="mdl-textfield__label mdl-color-text--brown-300" for="search-field-input">快速搜尋</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="stretch single page-content">
+                <form class="jrf-edit-form" id="edit-form" method="POST" action="#">
+                    <div class="jrf-article-item mdl-grid mdl-shadow--2dp">
+                        <div class="mdl-cell mdl-cell--12-col jrf-title-col">
+                            <h4>司法改革雜誌 103 期</h4>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="issue-field" name="issue" value="103" />
+                                <label class="mdl-textfield__label" for="issue-field">期 #</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="date" id="date-field" name="date" value="2014-06-29" />
+                                <label class="mdl-textfield__label" for="date-field">日期</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="cover-field" name="cover" value="" />
+                                <label class="mdl-textfield__label" for="cover-field">封面</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="url-field" name="url" value="" />
+                                <label class="mdl-textfield__label" for="url-field">PDF 連結</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="ebook-field" name="ebook" value="" />
+                                <label class="mdl-textfield__label" for="ebook-field">Google Play 圖書連結</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--primary jrf-align-right">儲存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">財團法人民間司法改革基金會</div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="assets/material.min.js"></script>
+</body>
+</html>
