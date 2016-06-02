@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="收錄民間司法改革基金會歷年聲明文件、剪報、會務資訊、以及其他數位內容。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>數位典藏檢索系統 – 民間司法改革基金會</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/app-icon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="JRF 數位典藏">
+    <link rel="apple-touch-icon-precomposed" href="assets/app-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/app-icon.png">
+    <meta name="msapplication-TileColor" content="#795548">
+
+    <link rel="stylesheet" href="assets/material.brown-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light,medium">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <link rel="shortcut icon" href="http://www.jrf.org.tw/newjrf/img/jrf.ico">
+</head>
+<body class="jrf-admin-body">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header jrf-admin-layout">
+        <div class="mdl-layout__drawer main-drawer">
+            <header class="main-header">
+                <img class="avatar" alt="民間司法改革基金會" src="assets/app_icon.png">
+                <h6><small>民間司法改革基金會</small><br>數位典藏維護系統</h6>
+            </header>
+            <nav class="mdl-navigation main-navigation">
+                <div class="mdl-layout-spacer"></div>
+            </nav>
+        </div>
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">數位典藏維護系統</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">返回資料庫</a>
+                    <a class="mdl-navigation__link" href="login.html">登出</a>
+                </nav>
+            </div>
+            <div class="mdl-layout__header-row jrf-icon-row">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="admin.html"><i class="material-icons">storage</i>典藏紀錄</a>
+                    <a class="mdl-navigation__link" href="admin_magazine.html"><i class="material-icons">collections_bookmark</i>雜誌文章</a>
+                </nav>
+                <div class="mdl-layout-spacer"></div>
+                <a class="mdl-button mdl-js-button mdl-button--icon" id="add-button" href="#"><i class="material-icons">add</i></a>
+                <div class="mdl-tooltip" for="add-button">新增</div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field-input">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-field-input">
+                        <label class="mdl-textfield__label mdl-color-text--brown-300" for="search-field-input">快速搜尋</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="stretch single page-content">
+                <form class="jrf-edit-form" id="edit-form" method="POST" action="#">
+                    <div class="jrf-article-item mdl-grid mdl-shadow--2dp">
+                        <div class="mdl-cell mdl-cell--12-col jrf-title-col">
+                            <div class="mdl-textfield mdl-js-textfield jrf-title-textfield">
+                                <input class="mdl-textfield__input" type="text" id="title-field" name="title" value="我的律師跑哪去了啊？強制辯護案件上訴階段對被告權益保障的缺" />
+                                <label class="mdl-textfield__label" for="title-field">標題</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="issue-field" name="issue" value="103" />
+                                <label class="mdl-textfield__label" for="issue-field">期 #</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="page-field" name="page" value="75" />
+                                <label class="mdl-textfield__label" for="keyword-field">頁碼</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <select class="mdl-textfield__input" id="topic-field" name="topic" value="強制辯護">
+                                    <option selected>強制辯護</option>
+                                </select>
+                                <label class="mdl-textfield__label" for="topic-field">專欄</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="author-field" name="author" value="蘇仲軒、李敏靜" />
+                                <label class="mdl-textfield__label" for="author-field">作者</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="date" id="date-field" name="date" value="1998-06-15" />
+                                <label class="mdl-textfield__label" for="date-field">日期</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <textarea class="mdl-textfield__input" type="text" rows="10" id="content-field" name="content">
+上訴狀DIY卻慘遭駁回
+阿文利用從不明男子手中購買到含有毒品成分的藥丸，並且依照網路上查詢到的製毒方法，於家中自行製毒，而在製造期間，警方拿著搜索票，到他的住家進行搜索，結果查獲到他正在製毒而將他逮捕，最後經法院審理後將他依製造第四級毒品未遂而判刑。（註一）
+製造第四級毒品是最輕本刑3年以上（註二）的強制辯護案件，地方法院就幫阿文找了義務辯護律師。一審結果，法官判處阿文1年有期徒刑，但阿文認為自己有悔意，而且還沒完成毒品，希望可以判更輕一點，決定提起上訴。由於律師委任範圍只到一審宣判，不包括上訴二審。阿文就自行撰寫上訴狀，希望等到上訴後，高等法院再幫他找一位義務辯護律師。沒想到，二審法官卻以上訴未敘明具體理由，不合法律上之程式，連開庭都沒開庭，就駁回阿文的上訴（註三）。
+什麼是強制辯護權
+強制辯護的意思是，只要你有原住民身分、中低收入戶的證明、智能障礙、所犯的罪最輕徒刑為3年以上，或第一審屬於高等法院管轄，再來就是法官認為你需要辯護人幫助。只要符合其中一項資格，法官在審理案件時，就一定要派辯護人給予協助，否則就是違法判決，可因此上訴。（註四）
+此項規定的目的是為保障在司法審判上較弱勢的被告或需要較多法律知識的案件，當事人於訴訟上可以得到協助，並使訴訟程序順利進行，避免被告在審判中的權利受到損害，平衡被告與國家司法機關之間的實力差距，以真正落實憲法保障被告的訴訟權。
+保障被告辯護權的指標判決
+阿文被起訴的是重罪，應受強制辯護的保障，但因律師委任不含上訴階段，只能自己DIY上訴狀，喪失了二審的機會。阿文的例子，突顯現行強制辯護制度的缺失。上訴二審失敗的阿文，申請到義務律師協助他上訴到最高法院，成功爭取到發回更審的機會。最高法院在判決理由中，明確揭示法院應實質保障被告的辯護權，是深具指標意義的重要判決。摘錄原文如下：
+「上訴人不服第一審判決未經第一審辯護人之協助而自行提出上訴狀及上訴理由狀，囿於上訴人專業法律知識或智能之限制，未能為契合法定具體理由為完足陳述，基於被告有受憲法保障其實質獲得辯護人充分完足協助之防禦權能，第二審法院於駁回其上訴前，仍應以裁定於當事人欄併列第一審之辯護人，俾促使該辯護人注意協助被告提出合法之上訴書狀。原審未審酌及此，逕認其提起第二審之上訴未提出具體理由，以不符合法定程序為由而駁回其在第二審之上訴，難謂允當。上訴意旨指摘原判決不當，非無理由，應認有撤銷發回之原因。」（註五）
+從2011年10月13日本件判決作成以來，最高法院陸續以相同理由，發回12件案子（參下表），可見仍有許多高等法院的法官仍然依循舊例，沒有跟上改革的腳步。
+律師的職責範圍到哪裡？
+最高法院還有一則關於律師職責範圍的重要判決。100台上2537號判決中指出：辯護人的職責於受委任之時開始，直到該案件判決確定，或脫離原審級進到下一個審級之時（如一審判決結束進到二審），辯護人職責才告終了，藉此使強制辯護案件能完整得到辯護人的協助，而不會有所間隙，發生無辯護人協助的問題。
+從最高法院的判決可以了解，我國強制辯護一審律師的職責範圍，為審判開始到上訴期間屆滿（註六）使案件確定，無法再改變之時，但刑訴法第31條（註七）中卻只用審判一詞，並不能明確表明其範圍是否包含上訴期間，所以在二審時仍有司法人員依法條內容做字面上的解釋，不認為於上訴期間需要有辯護人協助，忽略為被告指派辯護人的義務，而導致被告權利受損。
+法院做出補充理由的裁定來要求一審辯護人給於被告協助時，仍可能有辯護人不予理會，而其卻無法強制辯護人必須給予被告協助，反而使法院盡到通知義務，合於最高法院之見解。但事實上仍未保障被告的辯護權，此時三審也無理由要求二審法院從新判決，而導致判決確定。如此作法徒有形式上的適當，但實質上卻無法真正達到對被告的保障，無非架空憲法保障的訴訟權。
+小結
+強制辯護上訴期間，所出現無律師的問題，我國法律扶助基金會有注意到，故在其內部的扶助律師辦法扶助案件應行注意事項第16條第2項 （註八）中表示：「辯護人收到法院發函補正上訴理由，應協助當事人撰狀，而事後以書狀再來請求酌增酬金。」但於一般案件，辯護人並不會理會補正之通知，因為該通知並無強制力，也無法可拘束，並且實務上撰寫上訴書狀已屬另一個收費階段，導致被告權利未能保障。
+綜合上述，筆者認為未來律師在收費時可預期將上訴階段列為一審律師收費的範圍之內；並且於修法時，明確的將上訴階段列入強制辯護的範圍，並且完善相關法條，規定辯護人有此義務，就算被告不上訴，也需告知其有權要求辯護人代其撰寫上訴理由書；在法官辦理案件時，則需要注意對被告權益作保障。並加以規定若相關司法人員未盡義務時應受到的相關懲處規定，如此才能讓像阿文這類強制辯護案件的被告，在判決出來徬徨無助之時，有律師出來給於協助，讓他可以看到一線希望的光芒。
+                                </textarea>
+                                <label class="mdl-textfield__label" for="content-field">內容</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <textarea class="mdl-textfield__input" type="text" rows="5" id="comment-field" name="comment">
+1. 基隆地方法院100年度訴字第37號。
+2. 毒品危害防制條例第4條第4項。
+3. 臺灣高等法院100年上訴字2207號刑事判決。
+4. 刑事訴訟法(以下稱刑訴法)第31條。
+5. 最高法院刑事100年度台上第5673號。
+6. 刑訴法第349條上訴期間為十日，自送達判決後起算。
+7. 刑訴法第31條第一項有下列情形之一，於審判中未經選任辯護人者，審判長應指定公設辯護人或律師為被告辯護。
+8. 刑事第一審之扶助律師於法院發函要求具狀補正上訴理由後，應協助受扶助人撰擬上訴第二審理由狀。但受扶助人已選任或委任其他律師者，不在此限。
+                                </textarea>
+                                <label class="mdl-textfield__label" for="comment-field">註釋</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--primary jrf-align-right">儲存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">財團法人民間司法改革基金會</div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="assets/material.min.js"></script>
+</body>
+</html>
