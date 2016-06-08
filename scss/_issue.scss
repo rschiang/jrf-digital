@@ -94,7 +94,6 @@
 }
 
 .jrf-issue-header {
-     margin-bottom: 32px;
      border-radius: 2px;
 
      .jrf-issue-cover {
@@ -117,15 +116,19 @@
 }
 
 .jrf-issue-articles {
-    > :first-child {
-        margin-top: 8px;
-    }
+    $issue-padding: 32px;
+    padding: $issue-padding;
 
-    > h5:not(:first-child) {
+    > h5 {
         border-top: 1px solid rgba(0, 0, 0, 0.12);
-        padding: 16px 40px 0;
-        margin-left: -40px;
-        margin-right: -40px;
+        padding: $issue-padding $issue-padding 0;
+        margin-left: -$issue-padding;
+        margin-right: -$issue-padding;
+
+        &:first-child {
+            margin-top: -$issue-padding;
+            padding-top: $issue-padding;
+        }
     }
 
     h6 {
