@@ -27,28 +27,46 @@
 }
 
 .jrf-issue-article {
-    padding: 24px 40px;
+    padding: 24px;
 }
 
 .jrf-issue-nav {
-    padding: 24px 56px;
+    padding: 24px;
 }
 
-@media screen and (min-width: 976px) {
-    .jrf-issue-layout {
+.jrf-issue-layout {
+    @include tablet-up {
         .jrf-issue-container {
             padding: 48px 0 24px;
+            margin: 0 24px;
         }
 
         .jrf-issue-article {
             float: left;
+            width: 66.67%;
             margin-bottom: 64px;
-            max-width: 720px;
+            padding: 32px;
         }
 
         .jrf-issue-nav {
             display: table-cell; // Google’s approach to fix padding sep. by float
-            padding: 0 0 0 56px;
+            padding: 0 0 0 32px;
+        }
+    }
+
+    @include desktop-up {
+        .jrf-issue-container {
+            padding: 48px 0 24px;
+            margin: auto;
+        }
+
+        .jrf-issue-article {
+            width: 720px;
+            padding: 64px;
+        }
+
+        .jrf-issue-nav {
+            padding-left: 56px;
         }
     }
 }
@@ -104,6 +122,9 @@
 }
 
 .jrf-issue-article {
+    :first-child { margin-top: 0; }
+    :last-child { margin-bottom: 0; }
+
     p {
         text-indent: 1em;
     }
@@ -130,13 +151,14 @@
         a {
             color: #efebe9;
             display: block;
-            padding: 6px 0 6px 14px;
+            margin-right: -14px;
+            padding: 6px 14px;
             font-size: .92857em;
             font-weight: inherit;
             text-decoration: none;
 
-            &:hover, &:focus { background: #5d4037; }
-            &:active { background: #4e342e; }
+            &:hover, &:focus { background: rgba(#4e342e, .4); }
+            &:active { background: rgba(#4e342e, .8); }
         }
     }
 
