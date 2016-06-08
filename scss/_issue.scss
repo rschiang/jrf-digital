@@ -4,23 +4,53 @@
 @import "compass/typography/links/hover-link";
 
 .jrf-issue-ribbon {
-    height: 70vh;
-    overflow: hidden;
+    min-height: 70vh;
+    position: relative;
 
-    .jrf-issue-ribbon-cover {
-        width: 100%;
-        height: 100%;
-        background-color: #555;
-        background-position: center;
-        background-size: cover;
-        opacity: .1;
+    .page-content {
+        @include translateZ(0); // Fixes view surface bug
+    }
+
+    + footer {
+        clear: both;
     }
 }
 
-.jrf-issue-layout .page-content {
-    margin-top: -65vh;
-    margin-bottom: 80px;
-    @include translateZ(0); // Fixes view surface bug
+.jrf-issue-ribbon-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    background-position: center;
+    background-size: cover;
+    opacity: .1;
+}
+
+.jrf-issue-article {
+    padding: 24px 40px;
+}
+
+.jrf-issue-nav {
+    padding: 24px 56px;
+}
+
+@media screen and (min-width: 976px) {
+    .jrf-issue-layout {
+        .jrf-issue-container {
+            padding: 48px 0 24px;
+        }
+
+        .jrf-issue-article {
+            float: left;
+            margin-bottom: 64px;
+            max-width: 720px;
+        }
+
+        .jrf-issue-nav {
+            display: table-cell; // Google’s approach to fix padding sep. by float
+            padding: 0 0 0 56px;
+        }
+    }
 }
 
 .jrf-issue-header {
@@ -44,12 +74,6 @@
     .mdl-card__actions {
          border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
-}
-
-.jrf-issue-content > .content {
-    min-height: 70vh;
-    border-radius: 2px;
-    padding: 24px 40px;
 }
 
 .jrf-issue-articles {
@@ -92,7 +116,7 @@
     h6 {
         margin: 8px 0 16px;
 
-        a {
+        > a {
             color: white;
             @include hover-link;
         }
@@ -119,7 +143,7 @@
     li.active {
         margin-left: -2px;
 
-        a {
+        > a {
             border-left: 2px white solid;
             color: white;
             font-weight: bold;
