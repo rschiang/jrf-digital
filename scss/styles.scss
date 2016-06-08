@@ -57,8 +57,14 @@
     }
 }
 
-.mdl-color--white.mdl-layout__header .mdl-layout__drawer-button {
-    color: rgba(0, 0, 0, .54);
+.mdl-layout__drawer-button {
+    .mdl-color--white.mdl-layout__header & {
+        color: rgba(0, 0, 0, .54);
+    }
+
+    .mdl-color-text--grey-800.mdl-layout__header & {
+        color: #424242;
+    }
 }
 
 .page-content {

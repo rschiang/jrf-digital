@@ -76,15 +76,12 @@
 .jrf-issue-layout {
     .jrf-issue-ribbon {
         display: none;
-
         @include tablet-up {
             display: block;
         }
     }
 
     .jrf-issue-container {
-        padding: 0 24px;
-
         @include tablet-up {
             max-width: 720px;
             margin: -60vh auto 64px;
