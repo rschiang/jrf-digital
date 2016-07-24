@@ -41,6 +41,10 @@
 
 .jrf-result-table {
     margin: 0 auto 1.5em;
+
+    &.mdl-data-table td, &.mdl-data-table th {
+        text-align: left; // .mdl-data-table__cell--non-numeric
+    }
 }
 
 .jrf-edit-form {
