@@ -28,14 +28,22 @@
     }
 }
 
-.jrf-login-layout {
+.jrf-dialog-layout {
     background: rgba(#4e342e, .85);
 }
 
-.jrf-login-item {
+.jrf-dialog-item {
     background: white;
     text-align: center;
     margin: 5vh auto;
+    max-width: 90%;
+}
+
+.jrf-dialog-item img {
+    max-width: 100%;
+}
+
+.jrf-login-body .jrf-dialog-item {
     max-width: 640px;
 }
 
